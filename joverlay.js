@@ -11,7 +11,7 @@ $.fn.joverlay = function(options) {
 
 		$(joverlayMain).wrapInner('<div class="joverlay-tb"><div class="joverlay-td"><div class="joverlay-main"></div><div class="joverlay-shadow"></div></div></div>');
 		if (options.close) {
-			$('.joverlay-main', joverlayMain).prepend('<div class="joverlay-close">close</div>');
+			$('.joverlay-main', joverlayMain).prepend('<div class="joverlay-close"></div>');
 		};
 
 		$(joverlay).on('click', function() {
