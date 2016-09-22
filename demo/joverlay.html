@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="joverlay.css">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="../joverlay.js"></script>
+</head>
+<style type="text/css">
+	* {
+		padding: 0;
+		margin: 0;
+      box-sizing: border-box;
+	}
+
+	html {
+		height: 100%;
+	}
+
+	body {
+		position: relative;
+		height: 100%;
+		font-family: 'Segoe UI', Arial;
+		font-size: 14px;
+		background-image: -webkit-linear-gradient(45deg, #dde7eb, #ffebf7);
+		background-image: linear-gradient(45deg, #dde7eb, #ffebf7);
+		background-color: #E3E7ED;
+	}
+
+	.button-block {
+		position: absolute;
+		width: 220px;
+		height: 40px;
+		left: 50%; top: 50%;
+		margin: -20px 0 0 -110px;
+	}
+
+	.button {
+		display: block;
+		line-height: 40px;
+		border-radius: 3px;
+		text-decoration: none;
+		text-align: center;
+		color: #333;
+		background-color: rgba(255,255,255,.2);
+		border: 1px solid rgba(0,0,0,.1);
+	}
+
+</style>
+
+<body>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.joverlay').joverlay();
+		});
+
+	</script>
+
+	<div class="button-block">
+		<a href="#recall" class="joverlay button">Кликни меня</a><br>
+	</div>
+
+	<div id="recall">
+		Идея сверхчеловека стара как мир. В течение веков и сотен веков своей истории человечество жило с идеей сверхчеловека. Сказания и легенды всех древних народов полны образов сверхчеловека. Герои мифов, титаны, полубоги, Прометей, принесший огонь с неба; пророки, мессии и святые всех религий; герои волшебных сказок и эпических песен; рыцари, которые спасали пленных принцесс, пробуждали спящих красавиц, побеждали драконов, сражались с гигантами и людоедами, – все это образы сверхчеловека.
+		<br>
+		<br>
+		<a href="#rec" class="joverlay button">Кликни меня</a>
+	</div>
+
+	<div id="rec">
+		Народная мудрость всех веков и племен понимала, что человек, как он есть, не способен сам устроить свою жизнь; народная мудрость никогда не считала человека достижением, венчающим творение. Она правильно оценивала место человека, принимала и допускала ту мысль, что могут и должны быть существа, которые, хотя они тоже являются людьми, все же стоят гораздо выше обыкновенного человека, сильнее его, сложнее, «чудеснее». Лишь тупая и стерилизованная мысль последних столетий европейской культуры утратила соприкосновение с идеей сверхчеловека и поставила своей целью человека, каков он есть, каким он всегда был и всегда будет. За этот сравнительно короткий период европейская мысль так основательно забыла идею сверхчеловека, что когда Ницше бросил ее Западу, она показалась новой, оригинальной и неожиданной. В действительности же она существовала с самого начала известного нам человеческого мышления.
+	</div>
+
+</body>
+</html>

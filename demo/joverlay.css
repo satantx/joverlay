@@ -1,0 +1,60 @@
+.joverlay-box {
+	display: none;
+	padding: 0;
+	margin: 0;
+}
+
+.joverlay-box * {
+	box-sizing: border-box;
+}
+
+.joverlay-box,
+.joverlay-shadow {
+	position: fixed;
+	left: 0; top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.2);
+}
+
+.joverlay-tb {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.joverlay-td {
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	text-align: center;
+	display: table-cell;
+}
+
+.joverlay-main {
+	width: 400px;
+	margin: 0 auto;
+	background: #fff;
+	position: relative;
+	text-align: left;
+	padding: 20px;
+	border-radius: 2px;
+	z-index: 2;
+}
+
+.joverlay-shadow {
+	position: absolute;
+	background: none;
+}
+
+.joverlay-close {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: -12px; top: -12px;
+	border-radius: 12px;
+	background: #fff url(joverlay-close.png) 50% 50% no-repeat;
+	cursor: pointer;
+	box-shadow: 0 1px 5px rgba(0,0,0,.2);
+	z-index: 2;
+}
