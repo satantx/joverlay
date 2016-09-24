@@ -7,12 +7,12 @@ $.fn.joverlay = function(options) {
 		var joverlay = $(this),
 			 joverlayMain = joverlay.attr('href');
 			 
-		$(joverlayMain).addClass('joverlay-box');
-
-		$(joverlayMain).wrapInner('<div class="joverlay-tb"><div class="joverlay-td"><div class="joverlay-main"></div><div class="joverlay-shadow"></div></div></div>');
-		if (options.close) {
-			$('.joverlay-main', joverlayMain).prepend('<div class="joverlay-close"></div>');
-		};
+		if (!$(joverlayMain).hasClass('joverlay-box')) {
+			$(joverlayMain).wrapInner('<div class="joverlay-tb"><div class="joverlay-td"><div class="joverlay-main"></div><div class="joverlay-shadow"></div></div></div>').addClass('joverlay-box');
+			if (options.close) {
+				$('.joverlay-main', joverlayMain).prepend('<div class="joverlay-close"></div>');
+			};
+		}
 
 		$(joverlay).on('click', function() {
 			$(joverlayMain).show();
