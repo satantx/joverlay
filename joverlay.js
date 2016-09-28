@@ -1,6 +1,7 @@
 $.fn.joverlay = function(options) {
 	var options = $.extend({
-		close: true
+		close: true,
+		closeText: 'Закрыть'
 	},
 	options);
 	return this.each(function(){
@@ -9,12 +10,13 @@ $.fn.joverlay = function(options) {
 			 
 		if (!$(joverlayMain).hasClass('joverlay-box')) {
 			$(joverlayMain).wrapInner('<div class="joverlay-tb"><div class="joverlay-td"><div class="joverlay-main"></div><div class="joverlay-shadow"></div></div></div>').addClass('joverlay-box');
-			if (options.close) {
-				$('.joverlay-main', joverlayMain).prepend('<div class="joverlay-close"></div>');
+			if (options.close == true) {
+				$('.joverlay-main', joverlayMain).prepend('<div class="joverlay-close">'+options.closeText+'</div>');
 			};
 		}
 
 		$(joverlay).on('click', function() {
+			$('.joverlay-box').hide();
 			$(joverlayMain).show();
 			return false;
 		});
